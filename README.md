@@ -12,8 +12,10 @@
 动态增加单个对象的额外职责，比生成子类更灵活。
 3. [Proxy 代理模式](/src/main/java/com/lzhlyle/demo/design/pattern/gof/proxy)    
 控制对单个对象的访问。
-4. Factory Method 工厂方法
-5. Prototype 原型模式
+4. [Factory Method 工厂方法](/src/main/java/com/lzhlyle/demo/design/pattern/gof/factoryMethod)    
+一般先用工厂方法解决对象创建问题。
+5. [Prototype 原型模式](/src/main/java/com/lzhlyle/demo/design/pattern/gof/prototype)     
+在初始化信息不发生变化时考虑。
 6. Template Method 模板方法
 7. Facade 外观模式
 8. Builder 建造者模式
