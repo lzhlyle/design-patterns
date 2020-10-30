@@ -2,10 +2,12 @@
 
 ### GoF 23 design patterns
 
-1. [strategy](/tree/main/src/main/java/com/lzhlyle/demo/design/pattern/gof/strategy)    
-策略模式：将一系列算法逐个封装并可相互替换，易于切换、理解、扩展。
-2. decorator 装饰模式
-3. proxy 代理模式
+1. [strategy](/src/main/java/com/lzhlyle/demo/design/pattern/gof/strategy) 策略模式    
+将一系列算法逐个封装并可相互替换，易于切换、理解、扩展。
+2. [decorator](/src/main/java/com/lzhlyle/demo/design/pattern/gof/decorator) 装饰模式    
+动态增加单个对象的额外职责，比生成子类更灵活。
+3. [proxy](/src/main/java/com/lzhlyle/demo/design/pattern/gof/proxy) 代理模式    
+控制对单个对象的访问。
 4. factory method 工厂方法
 5. prototype 原型模式
 6. template method 模板方法
