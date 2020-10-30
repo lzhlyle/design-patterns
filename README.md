@@ -1,5 +1,9 @@
 # design-patterns
 
+- `common/` 既有代码
+- `before/` 应用设计模式前的使用，变化到来时的痛点
+- `after/` 应用设计模式后的改变
+
 ### GoF 23 design patterns
 
 1. [Strategy 策略模式](/src/main/java/com/lzhlyle/demo/design/pattern/gof/strategy)    
