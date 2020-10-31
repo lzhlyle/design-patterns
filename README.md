@@ -18,7 +18,7 @@
 在初始化信息不发生变化时考虑。
 6. [Template Method 模板方法](/src/main/java/com/lzhlyle/demo/design/pattern/gof/templateMethod)    
 继承+重写解决代码重复问题。
-7. Facade 外观模式    
+7. [Facade 外观模式](/src/main/java/com/lzhlyle/demo/design/pattern/gof/facade)    
 子系统的高层接口，避免两个类直接关系的第三者。
 8. Builder 建造者模式    
 多个部件的建造实现相同，只是所需部件、建造顺序不同时考虑。
