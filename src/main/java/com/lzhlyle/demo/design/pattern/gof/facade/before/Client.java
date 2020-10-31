@@ -2,8 +2,6 @@ package com.lzhlyle.demo.design.pattern.gof.facade.before;
 
 import com.lzhlyle.demo.design.pattern.gof.facade.common.SubSystem;
 
-import java.util.Random;
-
 public class Client {
     public static void main(String[] args) {
 
@@ -11,23 +9,15 @@ public class Client {
         // 需求：为子系统/遗留系统进行维护、功能扩展
 
         SubSystem subSystem = new SubSystem();
-        Random rd = new Random();
 
-        {
-            subSystem.process7();
+        subSystem.printLog();
 
-            if (rd.nextBoolean()) {
-                subSystem.process1();
-                subSystem.process3();
-                subSystem.process5();
-            }
+        subSystem.getInfo();
+        subSystem.changeConfig(); // 内部包括 saveDb()
+        subSystem.sendMessage();
 
-            if (rd.nextBoolean()) {
-                subSystem.process2();
-                subSystem.process4();
-                subSystem.process6();
-            }
-        }
+        subSystem.rpc(); // 内部包括 getInfo()
+        subSystem.saveDb();
 
         // 直接调用子系统/遗留系统的服务，代码更难以调试和理解
     }

@@ -1,31 +1,31 @@
 package com.lzhlyle.demo.design.pattern.gof.facade.common;
 
 public class SubSystem {
-    public void process1() {
-        System.out.println("process 1...");
+    // 子系统调用复杂
+
+    public void getInfo() {
+        System.out.println("get info...");
     }
 
-    public void process2() {
-        System.out.println("process 2...");
+    public void rpc() {
+        getInfo();
+        System.out.println("rpc...");
     }
 
-    public void process3() {
-        System.out.println("process 3...");
+    public void changeConfig() {
+        System.out.println("change parameter...");
+        saveDb();
     }
 
-    public void process4() {
-        System.out.println("process 4...");
+    public void saveDb() {
+        System.out.println("save db...");
     }
 
-    public void process5() {
-        System.out.println("process 5...");
+    public void sendMessage() {
+        System.out.println("send message...");
     }
 
-    public void process6() {
-        System.out.println("process 6...");
-    }
-
-    public void process7() {
-        System.out.println("process 7...");
+    public void printLog() {
+        System.out.println("print log...");
     }
 }

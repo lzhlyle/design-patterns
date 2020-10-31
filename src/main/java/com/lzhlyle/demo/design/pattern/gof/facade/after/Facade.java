@@ -9,19 +9,18 @@ public class Facade {
         this.subSystem = new SubSystem();
     }
 
-    public void processA() {
-        subSystem.process7();
+    public void updateParamAndNotice() {
+        subSystem.printLog();
 
-        subSystem.process1();
-        subSystem.process3();
-        subSystem.process5();
+        subSystem.getInfo();
+        subSystem.changeConfig();
+        subSystem.sendMessage();
     }
 
-    public void processB() {
-        subSystem.process7();
+    public void saveFromRpc() {
+        subSystem.printLog();
 
-        subSystem.process2();
-        subSystem.process4();
-        subSystem.process6();
+        subSystem.rpc();
+        subSystem.saveDb();
     }
 }
