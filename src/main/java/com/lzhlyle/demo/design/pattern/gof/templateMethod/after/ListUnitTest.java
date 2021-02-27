@@ -31,7 +31,6 @@ public abstract class ListUnitTest {
     }
 
     // 预留出方法的模板，由子类选择实现
-
     protected void fillList(List<Integer> list) {
         for (int i = 0; i < size; i++) {
             list.add(rd.nextInt(max));

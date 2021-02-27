@@ -12,7 +12,7 @@ public class Client {
         Robot staff004 = new Robot(4, "admin", manager);
         Robot staff005 = new Robot(5, "admin", manager);
 
-        // 在实例化 staff 机器人的时候，大多信息时不变的，只是少量信息的变化时，
+        // 在实例化 staff 机器人的时候，大多信息是不变的，只是少量信息在变化，
         // 可考虑原型模式
     }
 }

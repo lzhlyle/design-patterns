@@ -6,7 +6,7 @@ import com.lzhlyle.demo.design.pattern.gof.decorator.common.Person;
 public abstract class AbstractGreetingDecorator implements Person {
     protected Person person;
 
-    public void setPerson(Person person) {
+    public void teach(Person person) {
         this.person = person;
     }
 }

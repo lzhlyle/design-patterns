@@ -18,8 +18,6 @@ public class RobotPrototype {
 
     public RobotPrototype cloneOne(Integer sn) {
         // 视业务情况，浅拷贝或深拷贝
-        RobotPrototype res = new RobotPrototype(this.sn, this.password, this.manager);
-        res.sn = sn;
-        return res;
+        return new RobotPrototype(sn, this.password, this.manager);
     }
 }

@@ -4,7 +4,7 @@ import com.lzhlyle.demo.design.pattern.gof.proxy.common.ConcreteClient;
 import com.lzhlyle.demo.design.pattern.gof.proxy.common.IClientRequest;
 
 public class Proxy implements IClientRequest {
-    private IClientRequest client = new ConcreteClient();
+    private final IClientRequest client = new ConcreteClient();
 
     public void request() {
         beforeRequest();
@@ -12,6 +12,7 @@ public class Proxy implements IClientRequest {
         afterRequest();
     }
 
+    // 可结合模板方法模式，将能力下沉，形成代理框架
     private void afterRequest() {
         System.out.println("After request.");
     }

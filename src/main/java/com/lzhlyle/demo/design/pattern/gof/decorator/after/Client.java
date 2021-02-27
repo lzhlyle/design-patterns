@@ -14,21 +14,21 @@ public class Client {
         Person gentleman = new Man("Lyle");
         // 无需改变 Man 的既有职责，不会让 Man 更臃肿(世俗)，而是保持初心 SRP
 
-        AbstractGreetingDecorator gentle = new GentlemanDecorator();
-        gentle.setPerson(gentleman);
+        AbstractGreetingDecorator gentleWay = new GentlemanDecorator();
+        gentleWay.teach(gentleman);
 
-        gentle.sayHello();
+        gentleWay.sayHello();
     }
 
     private static void gentleAndPuaGreeting() {
-        Person badboy = new Man("Lyle");
+        Person badBoy = new Man("Lyle");
 
         // 还可适时地任意搭配顺序
-        AbstractGreetingDecorator gentle = new GentlemanDecorator();
-        gentle.setPerson(badboy);
-        AbstractGreetingDecorator pua = new PuaDecorator();
-        pua.setPerson(gentle);
+        AbstractGreetingDecorator gentleWay = new GentlemanDecorator();
+        gentleWay.teach(badBoy);
+        AbstractGreetingDecorator puaWay = new PuaDecorator();
+        puaWay.teach(gentleWay);
 
-        pua.sayHello();
+        puaWay.sayHello();
     }
 }
