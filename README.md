@@ -20,7 +20,7 @@
 继承+重写解决代码重复问题。
 7. [Facade 外观模式](/src/main/java/com/lzhlyle/demo/design/pattern/gof/facade)    
 子系统的高层接口，避免两个类直接关系的第三者。
-8. Builder 建造者模式    
+8. [Builder 建造者模式](/src/main/java/com/lzhlyle/demo/design/pattern/gof/builder)    
 多个部件的建造实现相同，只是所需部件、建造顺序不同时考虑。
 9. Observer 观察者模式    
 一对多依赖关系，一端变化、多端得到通知并自动更新。（目标与观察者可实现弱耦合）
