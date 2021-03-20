@@ -24,7 +24,7 @@
 多个部件的建造实现相同，只是所需部件、建造顺序不同时考虑。
 9. [Observer 观察者模式](/src/main/java/com/lzhlyle/demo/design/pattern/gof/observer)    
 一对多依赖关系，一端变化、多端得到通知并自动更新。（目标与观察者可实现弱耦合）
-10. Abstract Factory 抽象工厂模式    
+10. [Abstract Factory 抽象工厂模式](/src/main/java/com/lzhlyle/demo/design/pattern/gof/abstractFactory)    
 当工厂方法无法满足多系列问题时，再重构为抽象工厂。
 11. State 状态模式    
 当对象内状态改变而执行不同操作时考虑，状态转移逻辑不在if/switch中，而在各子类之间，增/改状态和状态转换较容易。
